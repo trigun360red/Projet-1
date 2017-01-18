@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+        <meta charset="utf-8" />
+        <title>WebAgency - un site qui vous ressemble</title>
+        <meta name='description' content=''>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+				<!--- AJOUT DES SOURCES  -->
+			<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+			<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
+
+	</head>
+
+<body>
+
+	<div id='header'>
+			<a href="#Accueil"><img id='logo' src="Images/images/logo-Web-Agency.png"></a>
+
+			<div >
+			<ul class='liste_menu'>
+				<li class ='menu texte'><a href='#Accueil'>Accueil</a></li>
+				<li class ='menu texte'><a href='#Services'>Services </a></li>
+				<li class ='menu texte'><a href='#Portfolio'>Portfolio</a></li>
+				<li class ='menu texte'><a href='#Contact'>Contact</a></li>
+			</ul>
+			</div>
+	</div>
+
+
+		<section id='Accueil'>
+			<div class="carousel" data-flickity='{ "wrapAround": true }'>
+
+ 			 	<div class="carousel-cell">
+					<img src="Images/images/slider Accueil/Web-Agency.jpg">
+ 			 	</div>
+				<div class="carousel-cell">
+					<img src="Images/images/slider Accueil/Web-Agency2.jpg">
+				</div>
+			</div>
+
+				<div id='TexteAccueil'>
+					<p class='texte_titre_accueil'><span class='webagency'>WEBAGENCY</span> : L'AGENCE DE TOUS</br>VOS PROJETS !</p>
+					<p class='texte_accueil'>Vous avez un <strong>projet web</strong> ? La Webagency vous aide a le realiser</p>
+					 
+					<div class='bouton texte'>
+						<input type='submit' value='Plus d&apos;infos'/>
+					</div>
+
+				</div>
+		</section>
+
+		<section id='Services'>
+
+			<h1 class='h1'>NOS SERVICES</h1>
+			<div class='rond_bleu'></div>
+
+			<p class='texte_services texte'>Notre agence met en oeuvre tous les moyens humains comme technique pour realiser vos projets.</br> Bénéficiez des maintenant des meilleurs conseils pour affirmer votre <strong>présence en ligne !</strong></p>
+
+			<div class='ecran'></div>
+
+			<div class='services_droite'>
+
+				<div class='div_service texte'>
+					<img src="Images/icone-UX-Design.png" class='icone' >
+					<h2 class='titre_h2_service'>UX Design</h2></br>
+					Nos expert designer sont a meme de fournir la meilleur experience utilisateur.
+				</div>
+				<div class='div_service texte'>
+					<img src="Images/icone-UI-Design.png" class='icone' >
+					<h2 class='titre_h2_service'>UI Design</h2></br>
+					Nous mettons un point d'honneur a travailler l'optimisation de nos sites.
+				</div>
+				<div class='div_service texte'>
+					<img src="Images/icone-Referencement.png" class='icone'>
+					<h2 class='titre_h2_service'>Referencement</h2></br>
+					Nous assurons le meilleur <strong>referencement</strong> possible de
+					votre site sur les moteur de recherche
+				</div>
+
+			</div>
+		</section>
+
+		<section id='Portfolio'>
+			<h1 class='h1'>NOS PROJETS</h1>
+			<div class='rond_bleu'></div>
+			<p class='texte_services texte' id='texte_projet'>Notre agence met en oeuvre tous les moyens humains comme technique pour realiser vos projets.</br> Bénéficiez des maintenant des meilleurs conseils pour affirmer votre <strong>présence en ligne !</strong>
+			</p>
+
+
+			<div id="filters" class="button-group">  
+				<button class="button is-checked" id='all_work_selector'>All work</button>
+  				<button class="button" id='creative_selector'>Creative</button>
+ 				<button class="button" id='corporate_selector'>Corporate</button>
+  				<button class="button" id='portfolio_selector'>Portfolio</button>
+  			</div>
+			
+		
+
+			<div class='image'>
+
+				<div class='projet-1 image_projet Creative'>
+
+					<div class='contenu_hover'>
+						<h3 class='texte_img_projet'>Optic all</h3>
+						<p class='h3_projet texte_img_projet'>Creation de lunettes fantaisie</p>
+					</div>
+					<div class='cercle_oeil'>
+						<div class='oeil'>
+							<div class='iris'>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class=' projet-2 image_projet Portfolio'>
+
+					<div class='contenu_hover'>
+						<h3 class='texte_img_projet'>Rabbit clothes</h3>
+						<p class='h3_projet texte_img_projet'>Boutique de vetement</p>
+					</div>
+					<div class='cercle_oeil'>
+						<div class='oeil'>
+							<div class='iris'>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=' projet-3 image_projet Creative'>
+					
+					<div class='contenu_hover'>
+						<h3 class='texte_img_projet'>Pompadour</h3>
+						<p class='h3_projet texte_img_projet'>Longboard - Skateboard</p>
+					</div>
+					<div class='cercle_oeil'>
+						<div class='oeil'>
+							<div class='iris'>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=' projet-4 image_projet Portfolio'>
+					
+					<div class='contenu_hover'>
+						<h3 class='texte_img_projet'>Maquette pour tous</h3>
+						<p class='h3_projet texte_img_projet'>Fabrication de patron pour ingenieur</p>
+					</div>
+					<div class='cercle_oeil'>
+						<div class='oeil'>
+							<div class='iris'>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=' projet-5 image_projet Corporate'>
+					
+					<div class='contenu_hover'>
+						<h3 class='texte_img_projet'>P-S-D MOCKUP </h3>
+						<p class='h3_projet texte_img_projet'>Fabrication de sac en papier</p>
+					</div>
+					<div class='cercle_oeil'>
+						<div class='oeil'>
+							<div class='iris'>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=' projet-6 image_projet Corporate'>
+					
+					<div class='contenu_hover'>
+						<h3 class='texte_img_projet'>Numerobis and co</h3>
+						<p class='h3_projet texte_img_projet'>Cabinet d'architecte</p>
+					</div>
+					<div class='cercle_oeil'>
+						<div class='oeil'>
+							<div class='iris'>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=' projet-7 image_projet Creative'>
+					
+					<div class='contenu_hover'>
+						<h3 class='texte_img_projet'>Apollo</h3>
+						<p class='h3_projet texte_img_projet'>Conception de piece aerospatial</p>
+					</div>
+					<div class='cercle_oeil'>
+						<div class='oeil'>
+							<div class='iris'>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class=' projet-8 image_projet Corporate'>
+					
+					<div class='contenu_hover'>
+						<h3 class='texte_img_projet'>Be Theme</h3>
+						<p class='h3_projet texte_img_projet'>Agence Infographie</p>
+					</div>
+					<div class='cercle_oeil'>
+						<div class='oeil'>
+							<div class='iris'>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<section id='Contact'>
+			<div class='voile_bleu'></div>
+
+			<iframe width="100%" height="680" frameborder="2" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJgcpR9-gnVQ0RiXo5ewOGY3k&key=AIzaSyBH3z1dY38HRZddKvRO42ILzBx5Okk7HMA" allowfullscreen></iframe>
+
+			<div class='formulaire'>
+				<form>
+						<h1 class='h1-contact'>Contact Info</h1>
+						<h2>WebAgency SAS</h2>
+
+					<p class='texte'>
+						3 rue de la villette, 33000 Bordeaux</br>
+						Tel: 05 56 86 94 85
+					</p>
+					<div>
+						<label for='nom'></label>
+						<input type='text' id='nom' placeholder='Nom'/>
+					</div>
+					<div>
+						<label for='email'></label>
+						<input type="email" id='email' placeholder='Email'/>
+					</div>
+					<div>
+						<label for='subject'></label>
+						<input type='text' id='subject' placeholder='Subject'/>
+					</div>
+					<div>
+						<label for='message'></label>
+						<textarea id='message' placeholder="Message"></textarea>
+					</div>
+					<div>
+						<input type='submit' value='Send Message'/>
+					</div>
+				</form>
+
+			</div>
+		</section>
+
+<script type="text/javascript">
+	var elem = document.querySelector('.image');
+	var iso = new Isotope( elem, {
+	// options
+	itemSelector: '.image_projet',
+	layoutMode: 'fitRows'
+	});
+
+	document.getElementById('creative_selector').addEventListener('click',function(){
+		console.log('pass');
+		iso.arrange({ filter: '.Creative' });
+	});
+	document.getElementById('all_work_selector').addEventListener('click',function(){
+		console.log('pass');
+		iso.arrange({ filter: '*' });
+	});
+	document.getElementById('portfolio_selector').addEventListener('click',function(){
+		console.log('pass');
+		iso.arrange({ filter: '.Portfolio' });
+	});
+	document.getElementById('corporate_selector').addEventListener('click',function(){
+		console.log('pass');
+		iso.arrange({ filter: '.Corporate' });
+	});
+
+</script>
+
+</body>
+
+</html>

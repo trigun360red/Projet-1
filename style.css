@@ -1,0 +1,498 @@
+/* GENERAL     */
+	html, body
+	{
+		padding:0;
+		margin: 0;
+	}
+
+	.rond_bleu
+	{
+		position: relative;
+		height: 15px;
+		width: 15px;
+		background-color: #50B0D5;
+		border-radius: 50%;
+		border-color:  white;
+		margin: auto;
+	}
+	.rond_bleu:after
+	{
+		display: block;
+		position: absolute;
+		top: 6px;
+		left: 20px;
+		content: '';
+		background-color: #E5E5E5;
+		height: 2px;
+		width: 60px;
+	}
+	.rond_bleu:before
+	{
+		display: block;
+		position: absolute;
+		top: 6px;
+		left: -65px;
+		content: '';
+		background-color: #E5E5E5;
+		height: 2px;
+		width: 60px;
+	}
+	a
+	{
+	    text-decoration: none;/*Pour que le lien ne soit plus "souligné"...*/
+	    color: black; /*ça reste un exemple*/	
+	}
+
+
+/* FONT        */
+	@font-face {
+
+	font-family: 'FontAwesome';
+
+	src :url('Images/fonts/fontawesome-webfont.eot') format('eot'),
+		 url('Images/fonts/fontawesome-webfont.woff') format('woff'),
+		 url('Images/fonts/fontawesome-webfont.ttf') format('ttf'),
+		 url('Images/fonts/fontawesome-webfont.svg') format('svg');
+	}
+	@font-face {
+
+	font-family: 'halflings';
+
+	src : url('Images/fonts/glyphicons-halflings-regular.eot') format('eot'),
+		 url('Images/fonts/glyphicons-halflings-regular.woff') format('woff'),
+		 url('Images/fonts/glyphicons-halflings-regular.svg') format('svg'),
+		 url('Images/fonts/glyphicons-halflings-regular.ttf') format('ttf');
+	}
+
+
+/* TEXTE       */
+	.h1
+	{
+		text-align: center;
+		margin: auto;
+		font-size: 2.5em;
+		font-family: 'helvetica';
+		padding-top: 20px;
+
+	}
+	h2
+	{
+		font-family: 'helvetica';
+		font-size: 0.8em;	
+	}
+	.h1-contact
+	{
+		font-family: 'helvetica';
+	}
+
+	.texte_titre_accueil
+	{
+		font-size: 2em;
+		font-family: 'helvetica';
+		color: white;	
+	}
+	.texte_accueil 
+	{
+		font-family: 'helvetica';
+		font-size: 1em;
+		color: white;
+	}
+	.webagency
+	{
+		color: #50B0D5;
+	}
+	.texte
+	{
+		font-family: 'helvetica';
+		font-size: 1em;
+	}
+	.titre_h2_service
+	{
+		font-family: 'helvetica';
+		font-size: 1.4em;
+	}
+	.texte_img_projet
+	{
+		opacity: 0;
+		font-family: 'helvetica';
+		color: white;
+		margin-top: 10px;
+	}
+	.h3_projet
+	{
+		margin-top: -16px;
+	}
+
+
+/* HEADER      */
+	#header
+	{
+		position: fixed;
+		height: 100px;
+		width: 100%;
+		background-color: white;
+		z-index: 1;
+	}
+	#logo
+	{
+		float: left;
+
+		margin-left: 10%;
+		margin-top: 20px;
+	}
+	.liste_menu
+	{
+		float: right;
+		margin-right: 10%;
+		height: 100%;
+	}
+	.menu 
+	{
+		display: inline-block;
+		list-style: none; /* nÃ©cessaire pour IE7 */
+		margin-right: 20px;
+		padding-top: 20px;
+
+	}
+	.menu:hover
+	{
+		border-top: 2px #50B0D5 groove;
+		font-weight: bold;
+	}
+
+
+/* ACCUEIL     */
+	#Accueil
+	{
+		position: relative;
+		top: 105px;
+		height: 650px;
+		overflow: hidden;
+	}
+	#TexteAccueil
+	{
+		position: absolute;
+		top: 23%;
+		left:15%;
+	}
+
+
+	/*  CAROUSEL-CELL   */
+		.carousel-cell
+		{
+			width: 100%;
+			height: 650px;
+		}
+
+/* SERVICES    */
+	#Services
+	{
+		position: relative;
+		top: 102px;
+		height: auto;
+		margin-bottom: 50px;
+	}
+	.nos_services
+	{
+		display: block;
+		margin:auto;
+		margin-bottom: 0%;
+	}
+	.texte_services
+	{
+		position: relative;
+		text-align: center;
+		margin-top: 30px;
+	}
+	.ecran
+	{
+		display: inline-block;
+		height: 400px;
+		width: 50%;
+		background-image:url('Images/images/main-feature.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		float: left;
+	}
+
+	.services_droite
+	{
+		display: inline-block;
+		width: 49%;
+		height: 400px;
+		margin-top: 20px;
+	}
+
+	.icone
+	{
+		float: left;
+	}
+	.div_service
+	{
+		position: relative;
+		padding-top: 20px;
+		padding-left: 40px;
+	}
+
+
+/* NOS PROJETS */
+	#Portfolio
+	{
+		position: relative;
+		top: 103px;
+		width: auto;
+		height: auto;
+		overflow: hidden;
+		background-color: #F5F5F5;
+		padding-bottom: 50px;
+	}
+	#nos_projets
+	{
+		display: block;
+		margin:auto;
+		margin-top: 2%;
+		margin-bottom: 0%;
+	}
+	#texte_projet
+	{
+		position: relative;
+		text-align: center;
+		left: 2%;
+		top: 20%;
+		margin-top: 30px;
+	}
+
+	/* DEBUT BUTTON */
+
+		.button 
+		{
+		  display: inline-block;
+		  padding: 0.5em 1.0em;
+		  background: #EEE;
+		  border: none;
+		  color: black;
+		  font-family: 'helvetica';
+		  font-size: 16px;
+		  text-shadow: 0 1px white;
+		  cursor: pointer;
+		}
+
+		.button:hover 
+		{
+		  background-color: #8CF;
+		  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+		  color: #222;
+		}
+
+
+		/* ---- button-group ---- */
+
+		.button-group 
+		{
+			position: relative;
+			margin-top: 40px;
+		 	margin-bottom: 60px;
+		 	left: 38%;
+		}
+
+		.button-group:after 
+		{
+		  content: '';
+		  display: block;
+		  clear: both;
+		}
+
+		.button-group .button 
+		{
+		  border-radius: 0;
+		  margin-left: 0;
+		  margin-right: 0;
+		}
+
+		.button-group .button:first-child { border-radius: 0.3em 0 0 0.3em; }
+		.button-group .button:last-child { border-radius: 0 0.3em 0.3em 0; }
+
+	/* FIN BUTTON   */
+
+	.image_projet
+	{
+		list-style: none; /* nÃ©cessaire pour IE7 */
+		float:left;
+		margin-left: 55px;
+		margin-bottom: 50px;
+		border: 3px gray solid;
+		width:300px;
+		height:200px;
+		top: 25px;
+	}
+	.image_projet img
+	{
+		max-width:100%;
+		max-height:100%;
+	}
+	.contenu_hover
+	{	
+		position: absolute;
+		top: 125px;
+		height: 75px;
+		width: 300px;
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	/* LISTE PROJET */
+			.projet-1
+			{
+				background-image: url('Images/images/Images Projet/01.jpg');
+				background-size: 100%;
+			}
+			.projet-2
+			{
+			background-image: url('Images/images/Images Projet/02.jpg');
+			background-size: 100%;
+			}
+			.projet-3
+			{
+				background-image: url('Images/images/Images Projet/03.jpg');
+				background-size: 100%;
+			}
+			.projet-4
+			{
+				background-image: url('Images/images/Images Projet/04.jpg');
+				background-size: 100%;
+			}
+			.projet-5
+			{
+				background-image: url('Images/images/Images Projet/05.jpg');
+				background-size: 100%;
+			}
+			.projet-6
+			{
+				background-image: url('Images/images/Images Projet/06.jpg');
+				background-size: 100%;
+			}
+			.projet-7
+			{
+				background-image: url('Images/images/Images Projet/07.jpg');
+				background-size: 100%;
+			}
+			.projet-8
+			{
+				background-image: url('Images/images/Images Projet/08.jpg');
+				background-size: 100%;
+			}
+	/* OEL BLEU  */
+		.cercle_oeil
+		{
+			position: relative;
+			top: 105px;
+			left: 240px;
+			height: 40px;
+			width: 40px;
+			background-color: #50B0D5;
+			border: 2px white solid;
+			border-radius: 50%;
+			opacity: 0;
+		}
+		.oeil
+		{
+			position: relative;
+			margin: auto;
+			top: 15px;
+			height: 5px;
+			width: 11px;
+			background-color: #50B0D5;
+			border: 2px white solid;
+			border-radius: 50%;
+			opacity: 0;
+		}
+		.iris
+		{
+			position: absolute;
+			top: -1px;
+			left: 3px;
+			height: 1px;
+			width: 1px;
+			background-color: white;
+			border: 2px white solid;
+			border-radius: 100%;
+			opacity: 0;
+		}
+
+	.image_projet:hover .contenu_hover
+	{
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	.image_projet:hover .cercle_oeil
+	{
+		opacity: 1;
+	}
+		.image_projet:hover .texte_img_projet
+	{
+		opacity: 1;
+	}
+	.image_projet:hover .oeil
+	{
+		opacity: 1;
+	}
+	.image_projet:hover .iris
+	{
+		opacity: 1;
+	}
+
+
+/* CONTACTS    */ 
+	#Contact
+	{
+		position: relative;
+		top: 103px;
+		height: auto;
+		overflow: hidden;
+	}
+	.voile_bleu
+	{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: #50B0D5;
+		opacity: 0.3;
+	}
+	.formulaire
+	{
+		position: absolute;
+		left: 65%;
+		top: 10%;
+	}
+
+	.bouton, input[type=submit]
+	{
+		background-color: #50B0D5;
+		color: white;
+		text-align: center;
+		font-size: 1.2em;
+		width: 150px;
+		border:none;
+		border-radius: 3px;
+		margin-top: 5px;
+		margin-bottom: 5px; 
+	}
+	form
+	{
+		padding: 30px;
+		padding-top: 5px;
+		background-color: rgba(255, 255, 255, 0.7);
+		background-opacity:0;
+	}
+	textarea
+	{
+		height: 150px;
+		width: 300px;
+	}
+	form div
+	{
+		margin-top: 10px;
+	}
+	input[type=text], input[type=email]
+	{
+		width: 300px;
+		height: 30px;
+	}
