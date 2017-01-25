@@ -122,6 +122,12 @@
 	{
 		margin-top: -16px;
 	}
+	#boutton-accueil
+	{
+		color: white;
+		font-size: 1.3em;
+		padding-top: 2px;
+	}
 
 
 /* HEADER      */
@@ -156,7 +162,7 @@
 	}
 	.menu:hover
 	{
-		border-top: 2px #50B0D5 groove;
+		border-top: 4px #8CF groove;
 		font-weight: bold;
 	}
 
@@ -176,6 +182,21 @@
 		left:15%;
 	}
 
+	
+	#boutton-accueil {
+	  -webkit-transition:-webkit-transform 1s; // Chrome Safari
+	  -moz-transition:-moz-transform 1s;       // Mozilla
+	  -o-transition:-o-transform 1s;           // Opéra
+	  -ms-transition:-ms-transform 1s;         // IE
+	  transition:transform 1s;
+	}
+	#boutton-accueil:hover{
+	  -webkit-transform:rotate(360deg); 
+	  -moz-transform:rotate(360deg);
+	  -o-transform:rotate(360deg); 
+	  -ms-transform:rotate(540deg); 
+	  transform:rotate(360deg);
+	}
 
 	/*  CAROUSEL-CELL   */
 		.carousel-cell
@@ -183,6 +204,7 @@
 			width: 100%;
 			height: 650px;
 		}
+
 
 /* SERVICES    */
 	#Services
@@ -220,17 +242,18 @@
 		display: inline-block;
 		width: 49%;
 		height: 400px;
-		margin-top: 20px;
+		margin-top: 30px;
 	}
 
 	.icone
 	{
 		float: left;
+		padding-top: 10px;
 	}
 	.div_service
 	{
 		position: relative;
-		padding-top: 20px;
+		padding-top: 10px;
 		padding-left: 40px;
 	}
 
@@ -261,6 +284,12 @@
 		top: 20%;
 		margin-top: 30px;
 	}
+	#filters
+	{
+		display: block;
+		text-align: center;
+		width: auto;
+	}
 
 	/* DEBUT BUTTON */
 
@@ -275,6 +304,7 @@
 		  font-size: 16px;
 		  text-shadow: 0 1px white;
 		  cursor: pointer;
+		  margin-left: -4px;
 		}
 
 		.button:hover 
@@ -282,35 +312,50 @@
 		  background-color: #8CF;
 		  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
 		  color: #222;
+
+
+
+		}
+
+		.button:focus
+		{
+			border-bottom: 2px #6A96BD solid;
+			color: white;
+			background-color: #50B0D5;
+			
+		}
+		.button:focus::after
+		{
+		display: block;
+		position: absolute;
+		margin-left: 30px;
+		margin-top: 9px;
+		content: '';
+		width: 0;
+		height: 0;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 10px solid #6A96BD;
+		opacity: 1;
 		}
 
 
 		/* ---- button-group ---- */
 
-		.button-group 
-		{
-			position: relative;
-			margin-top: 40px;
-		 	margin-bottom: 60px;
-		 	left: 38%;
-		}
+			.button-group 
+			{
+				margin-top: 40px;
+			 	margin-bottom: 60px;
+			}
 
-		.button-group:after 
-		{
-		  content: '';
-		  display: block;
-		  clear: both;
-		}
+			.button-group:after 
+			{
+			  content: '';
+			  display: block;
+			}
 
-		.button-group .button 
-		{
-		  border-radius: 0;
-		  margin-left: 0;
-		  margin-right: 0;
-		}
-
-		.button-group .button:first-child { border-radius: 0.3em 0 0 0.3em; }
-		.button-group .button:last-child { border-radius: 0 0.3em 0.3em 0; }
+			.button-group .button:first-child { border-radius: 0.3em 0 0 0.3em; }
+			.button-group .button:last-child { border-radius: 0 0.3em 0.3em 0; }
 
 	/* FIN BUTTON   */
 
@@ -320,7 +365,6 @@
 		float:left;
 		margin-left: 55px;
 		margin-bottom: 50px;
-		border: 3px gray solid;
 		width:300px;
 		height:200px;
 		top: 25px;
@@ -332,59 +376,59 @@
 	}
 	.contenu_hover
 	{	
-		position: absolute;
-		top: 125px;
+		position: relative;
+		top: 115px;
 		height: 75px;
 		width: 300px;
-		background-color: rgba(0, 0, 0, 0);
+		background-color: rgba(0, 0, 0, 0);		
 	}
 
 	/* LISTE PROJET */
-			.projet-1
-			{
-				background-image: url('Images/images/Images Projet/01.jpg');
-				background-size: 100%;
-			}
-			.projet-2
-			{
-			background-image: url('Images/images/Images Projet/02.jpg');
+		.projet-1
+		{
+			background-image: url('Images/images/Images Projet/01.jpg');
 			background-size: 100%;
-			}
-			.projet-3
-			{
-				background-image: url('Images/images/Images Projet/03.jpg');
-				background-size: 100%;
-			}
-			.projet-4
-			{
-				background-image: url('Images/images/Images Projet/04.jpg');
-				background-size: 100%;
-			}
-			.projet-5
-			{
-				background-image: url('Images/images/Images Projet/05.jpg');
-				background-size: 100%;
-			}
-			.projet-6
-			{
-				background-image: url('Images/images/Images Projet/06.jpg');
-				background-size: 100%;
-			}
-			.projet-7
-			{
-				background-image: url('Images/images/Images Projet/07.jpg');
-				background-size: 100%;
-			}
-			.projet-8
-			{
-				background-image: url('Images/images/Images Projet/08.jpg');
-				background-size: 100%;
-			}
+		}
+		.projet-2
+		{
+		background-image: url('Images/images/Images Projet/02.jpg');
+		background-size: 100%;
+		}
+		.projet-3
+		{
+			background-image: url('Images/images/Images Projet/03.jpg');
+			background-size: 100%;
+		}
+		.projet-4
+		{
+			background-image: url('Images/images/Images Projet/04.jpg');
+			background-size: 100%;
+		}
+		.projet-5
+		{
+			background-image: url('Images/images/Images Projet/05.jpg');
+			background-size: 100%;
+		}
+		.projet-6
+		{
+			background-image: url('Images/images/Images Projet/06.jpg');
+			background-size: 100%;
+		}
+		.projet-7
+		{
+			background-image: url('Images/images/Images Projet/07.jpg');
+			background-size: 100%;
+		}
+		.projet-8
+		{
+			background-image: url('Images/images/Images Projet/08.jpg');
+			background-size: 100%;
+		}
 	/* OEL BLEU  */
 		.cercle_oeil
 		{
 			position: relative;
-			top: 105px;
+			top: 20px;
 			left: 240px;
 			height: 40px;
 			width: 40px;
@@ -417,27 +461,27 @@
 			border-radius: 100%;
 			opacity: 0;
 		}
-
-	.image_projet:hover .contenu_hover
-	{
-		background-color: rgba(0, 0, 0, 0.3);
-	}
-	.image_projet:hover .cercle_oeil
-	{
-		opacity: 1;
-	}
-		.image_projet:hover .texte_img_projet
-	{
-		opacity: 1;
-	}
-	.image_projet:hover .oeil
-	{
-		opacity: 1;
-	}
-	.image_projet:hover .iris
-	{
-		opacity: 1;
-	}
+	/*   HOVER   */ 
+		.image_projet:hover .contenu_hover
+		{
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+		.image_projet:hover .cercle_oeil
+		{
+			opacity: 1;
+		}
+			.image_projet:hover .texte_img_projet
+		{
+			opacity: 1;
+		}
+		.image_projet:hover .oeil
+		{
+			opacity: 1;
+		}
+		.image_projet:hover .iris
+		{
+			opacity: 1;
+		}
 
 
 /* CONTACTS    */ 
@@ -473,7 +517,9 @@
 		border:none;
 		border-radius: 3px;
 		margin-top: 5px;
-		margin-bottom: 5px; 
+		margin-bottom: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px; 
 	}
 	form
 	{
@@ -496,3 +542,28 @@
 		width: 300px;
 		height: 30px;
 	}
+
+
+/*MEDIA QUERIES     */ 
+	@media screen and (max-width: 820px)
+
+	{
+		.ecran
+		{
+			width: 100%;
+		}
+		.services_droite
+		{
+			width: 100%;
+		}
+		.formulaire
+		{
+			left: 20%;
+		}
+		#header
+		{
+			display: none;
+		}
+
+
+	}	
