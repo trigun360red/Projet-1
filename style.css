@@ -1,8 +1,28 @@
+/* FONT        */
+	@font-face {
+
+	font-family: 'FontAwesome';
+
+	src :url('Images/fonts/fontawesome-webfont.eot') format('eot'),
+		 url('Images/fonts/fontawesome-webfont.woff') format('woff'),
+		 url('Images/fonts/fontawesome-webfont.ttf') format('ttf'),
+		 url('Images/fonts/fontawesome-webfont.svg') format('svg');
+	}
+	@font-face {
+
+	font-family: 'halflings';
+
+	src : url('Images/fonts/glyphicons-halflings-regular.eot') format('eot'),
+		 url('Images/fonts/glyphicons-halflings-regular.woff') format('woff'),
+		 url('Images/fonts/glyphicons-halflings-regular.svg') format('svg'),
+		 url('Images/fonts/glyphicons-halflings-regular.ttf') format('ttf');
+	}
 /* GENERAL     */
 	html, body
 	{
 		padding:0;
 		margin: 0;
+		font-family: 'helvetica';
 	}
 
 	.rond_bleu
@@ -44,25 +64,6 @@
 	}
 
 
-/* FONT        */
-	@font-face {
-
-	font-family: 'FontAwesome';
-
-	src :url('Images/fonts/fontawesome-webfont.eot') format('eot'),
-		 url('Images/fonts/fontawesome-webfont.woff') format('woff'),
-		 url('Images/fonts/fontawesome-webfont.ttf') format('ttf'),
-		 url('Images/fonts/fontawesome-webfont.svg') format('svg');
-	}
-	@font-face {
-
-	font-family: 'halflings';
-
-	src : url('Images/fonts/glyphicons-halflings-regular.eot') format('eot'),
-		 url('Images/fonts/glyphicons-halflings-regular.woff') format('woff'),
-		 url('Images/fonts/glyphicons-halflings-regular.svg') format('svg'),
-		 url('Images/fonts/glyphicons-halflings-regular.ttf') format('ttf');
-	}
 
 
 /* TEXTE       */
@@ -71,29 +72,24 @@
 		text-align: center;
 		margin: auto;
 		font-size: 2.5em;
-		font-family: 'helvetica';
 		padding-top: 20px;
 
 	}
 	h2
 	{
-		font-family: 'helvetica';
 		font-size: 0.8em;	
 	}
 	.h1-contact
 	{
-		font-family: 'helvetica';
 	}
 
 	.texte_titre_accueil
 	{
 		font-size: 2em;
-		font-family: 'helvetica';
 		color: white;	
 	}
 	.texte_accueil 
 	{
-		font-family: 'helvetica';
 		font-size: 1em;
 		color: white;
 	}
@@ -103,18 +99,15 @@
 	}
 	.texte
 	{
-		font-family: 'helvetica';
 		font-size: 1em;
 	}
 	.titre_h2_service
 	{
-		font-family: 'helvetica';
 		font-size: 1.4em;
 	}
 	.texte_img_projet
 	{
 		opacity: 0;
-		font-family: 'helvetica';
 		color: white;
 		margin-top: 10px;
 	}
@@ -300,7 +293,6 @@
 		  background: #EEE;
 		  border: none;
 		  color: black;
-		  font-family: 'helvetica';
 		  font-size: 16px;
 		  text-shadow: 0 1px white;
 		  cursor: pointer;
@@ -542,6 +534,10 @@
 		width: 300px;
 		height: 30px;
 	}
+	.iframe
+	{
+		width: 100%;
+	}
 
 
 /*MEDIA QUERIES     */ 
@@ -560,10 +556,19 @@
 		{
 			left: 20%;
 		}
-		#header
+		.liste_menu
 		{
 			display: none;
 		}
+		#logo
+		{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
 
+			margin: auto;
+
+		}
 
 	}	
