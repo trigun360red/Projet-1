@@ -546,7 +546,10 @@
 			font-weight: bold;
 			
 		}
-
+		.menu
+		{
+			padding-top: 5px;
+		}
 		.ecran
 		{
 			width: 100%;
