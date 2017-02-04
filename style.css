@@ -17,6 +17,7 @@
 		 url('Images/fonts/glyphicons-halflings-regular.svg') format('svg'),
 		 url('Images/fonts/glyphicons-halflings-regular.ttf') format('ttf');
 	}
+
 /* GENERAL     */
 	html, body
 	{
@@ -62,9 +63,6 @@
 	    text-decoration: none;/*Pour que le lien ne soit plus "souligné"...*/
 	    color: black; /*ça reste un exemple*/	
 	}
-
-
-
 
 /* TEXTE       */
 	.h1
@@ -122,7 +120,6 @@
 		padding-top: 2px;
 	}
 
-
 /* HEADER      */
 	#header
 	{
@@ -135,7 +132,6 @@
 	#logo
 	{
 		float: left;
-
 		margin-left: 10%;
 		margin-top: 20px;
 	}
@@ -151,14 +147,13 @@
 		list-style: none; /* nÃ©cessaire pour IE7 */
 		margin-right: 20px;
 		padding-top: 20px;
-
+		border-top: 4px rgba(44,159,190,0) groove;	
 	}
 	.menu:hover
 	{
-		border-top: 4px #8CF groove;
+		border-top: 4px rgba(44,159,190,1) groove;
 		font-weight: bold;
 	}
-
 
 /* ACCUEIL     */
 	#Accueil
@@ -174,8 +169,11 @@
 		top: 23%;
 		left:15%;
 	}
-
-	
+	#boutton-accueil a
+	{
+		text-decoration: none;
+		color: white;
+	}
 	#boutton-accueil {
 	  -webkit-transition:-webkit-transform 1s; // Chrome Safari
 	  -moz-transition:-moz-transform 1s;       // Mozilla
@@ -197,7 +195,6 @@
 			width: 100%;
 			height: 650px;
 		}
-
 
 /* SERVICES    */
 	#Services
@@ -249,7 +246,6 @@
 		padding-top: 10px;
 		padding-left: 40px;
 	}
-
 
 /* NOS PROJETS */
 	#Portfolio
@@ -472,7 +468,6 @@
 			opacity: 1;
 		}
 
-
 /* CONTACTS    */ 
 	#Contact
 	{
@@ -536,11 +531,21 @@
 		width: 100%;
 	}
 
-
-/*MEDIA QUERIES     */ 
+/* MEDIA QUERIES*/ 
 	@media screen and (max-width: 820px)
 
 	{
+		#header
+		{
+			height: 100px;
+		}
+		.liste_menu
+		{
+			position: absolute;
+			font-size: 0.8em;
+			margin-bottom: 10px;
+		}
+
 		.ecran
 		{
 			width: 100%;
@@ -553,17 +558,12 @@
 		{
 			left: 0%;
 		}
-		.liste_menu
-		{
-			display: none;
-		}
 		#logo
 		{
 			position: absolute;
 			left: 50%;
-			top: 50%;
+			top: 25%;
 			transform: translate(-50%,-50%);
-
 			margin: auto;
 		}
 				.image_projet
@@ -599,52 +599,3 @@
 
 
 	}	
-
-
-
-/*	<!-- 
-	 _	 	    _____        ___      ______       ______    ___      __
-	||\    /|  ||    \      ||  \    ||  ___|     ||      \  \\ \    / /
-	|| \  / |  ||  |\ \     ||   \   || |___      ||  __  /   \\ \  / /
-	|| |\/| |  ||   _  \    ||    )  ||  ___|     ||  ___ \    \\ \/ /
-	|| |  | |  ||  | |  \   ||   /   ||  ___      ||       \    ||  |
-	||_|  |_|  ||__| |___\  ||__/    ||_____|     ||_______/    ||__|
-
-	 ____                 __        ____             _________             __       ____          _____
-	||   |              ||__|     ||    |           ||        \          ||__|     ||   \\       |     |
-	||   |     _____    _____     ||    |           ||    |\   \         _____     ||    \\      |     |
-	||   |    /    /   ||_  _|    ||    |           ||    |_\   \       ||_  _|    ||    |\\     |     |
-	||   |   /    /     ||  |     ||    |           ||           \       ||  |     ||    | \\    |     |
-	||   |  /    /      ||  |     ||    |           ||     ___    \      ||  |     ||    |  \\   |     |
-	||   |_/    /       ||  |     ||    |           ||   ||   |    |     ||  |     ||    |   \\  |     |
-	||         /        ||  |     ||    |_______    ||   ||   |    |     ||  |     ||    |    \\ |     |
-	||        /        _||  |_    ||            |   ||   ||   |    |    _||  |_    ||    |     \\|     | 
-	||_______/        ||______|   ||____________|   ||___||   |____|   ||______|   ||____|      \\_____|
-
-
-	       .-.   .-'''-.  . -.
-	      /."".v'.-. .-.`v.""\\
-	      ||  / / O| | O\ \  ||
-	      \\_/| \__| |__/  \_//
-	       `-'\  .-n-n-.  /`-'
-	        _.-\/       \/-._
-	      .'   (\  ___  /)   `.
-	     /      \  ___  /      `.
-	    /        `.___.'         \
-	    |     |             \     \
-	    |     | .        .  |\     \
-	    \     \             | \     \
-	     \     \            |  \     \
-	      \     \           |.' `.    \
-	       `.    \         .'     `.   \
-	  _.._   `.   `-.     /        /`.  `.
-	.'    `-._ `.    `.  /      .'  /    `.
-	|         `-.\     \/      .'   / /\  ) \.
-	 \          _/ / /|/     .'    (_/ / / | \)
-	  `._      (__/_/-/   ..'        |(_/| |\_)
-	     ``-._____.-(     `.         | \ `-'
-	                  `-.   `.       |__\
-	                    (_/\ \\\
-	                       /_/// |_|______|_|
-
-	                        -->*/
