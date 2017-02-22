@@ -108,6 +108,7 @@
 		opacity: 0;
 		color: white;
 		margin-top: 10px;
+		padding-left: 5px;
 	}
 	.h3_projet
 	{
@@ -309,7 +310,14 @@
 			background-color: #50B0D5;
 			
 		}
-		.button:focus::after
+
+		#all_work_selector
+		{
+			border-bottom: 2px #6A96BD solid;
+			color: white;
+			background-color: #50B0D5;
+		}
+		#all_work_selector::after
 		{
 		display: block;
 		position: absolute;
@@ -323,7 +331,6 @@
 		border-top: 10px solid #6A96BD;
 		opacity: 1;
 		}
-
 
 		/* ---- button-group ---- */
 
@@ -577,7 +584,7 @@
 		{
 			list-style: none; /* nÃ©cessaire pour IE7 */
 			float:left;
-			margin-left:10px;
+			margin-left:20px;
 			margin-bottom: 50px;
 			width:300px;
 			height:200px;
@@ -607,27 +614,8 @@
 		{
 			margin-right: 20%;
 		}
-		.button:hover
-		{
-			border-bottom: 2px #6A96BD solid;
-			color: white;
-			background-color: #50B0D5;
-			
-		}
-		.button:hover::after
-		{
-		display: block;
-		position: absolute;
-		margin-left: 30px;
-		margin-top: 9px;
-		content: '';
-		width: 0;
-		height: 0;
-		border-left: 5px solid transparent;
-		border-right: 5px solid transparent;
-		border-top: 10px solid #6A96BD;
-		opacity: 1;
-		}
+
+
 		.iframe
 		{
 			width: 0%;
