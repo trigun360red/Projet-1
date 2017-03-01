@@ -19,11 +19,11 @@
 <body>
 
 	<div id='header'>
-	
+
 			<a href="#Accueil">
 				<img id='logo' src="Images/images/logo-Web-Agency.png" alt='Logo de la WebAgency'>
 			</a>
-			
+
 			<div class='header__liste'>
 				<ul class='liste_menu'>
 					<li class ='menu texte'><a href='#Accueil'>Accueil</a></li>
@@ -51,7 +51,7 @@
 		<div id='TexteAccueil'>
 			<h1 class='texte_titre_accueil'><span class='webagency'>WEBAGENCY</span> : L'AGENCE DE TOUS<br>VOS PROJETS !</h1>
 			<p class='texte_accueil'>Vous avez un <strong>projet web</strong> ? La Webagency vous aide a le realiser</p>
-			 
+
 			<div class='bouton texte-INFO' id='boutton-accueil'>
 				<a class='bouton_info'href="#Services"><p>Plus d&apos;infos</p></a>
 			</div>
@@ -96,14 +96,14 @@
 		</p>
 
 
-		<div id="filters" class="button-group">  
-			<button class="button" id='all_work_selector'>All work</button>
+		<div id="filters" class="button-group">
+			<button class="button is-active" id='all_work_selector'>All work</button>
 			<button class="button" id='creative_selector'>Creative</button>
 			<button class="button" id='corporate_selector'>Corporate</button>
 			<button class="button" id='portfolio_selector'>Portfolio</button>
 		</div>
-		
-	
+
+
 
 		<div class='image'>
 
@@ -118,7 +118,7 @@
 						<div class='iris'>
 						</div>
 					</div>
-				</div>	
+				</div>
 			</div>
 			<div class=' projet-2 image_projet Portfolio'>
 
@@ -134,7 +134,7 @@
 				</div>
 			</div>
 			<div class=' projet-3 image_projet Creative'>
-				
+
 				<div class='contenu_hover'>
 					<h3 class='texte_img_projet'>Pompadour</h3>
 					<p class='h3_projet texte_img_projet'>Longboard - Skateboard</p>
@@ -147,7 +147,7 @@
 				</div>
 			</div>
 			<div class=' projet-4 image_projet Portfolio'>
-				
+
 				<div class='contenu_hover'>
 					<h3 class='texte_img_projet'>Maquette pour tous</h3>
 					<p class='h3_projet texte_img_projet'>Fabrication de patron pour ingenieur</p>
@@ -160,7 +160,7 @@
 				</div>
 			</div>
 			<div class=' projet-5 image_projet Corporate'>
-				
+
 				<div class='contenu_hover'>
 					<h3 class='texte_img_projet'>P-S-D MOCKUP </h3>
 					<p class='h3_projet texte_img_projet'>Fabrication de sac en papier</p>
@@ -173,7 +173,7 @@
 				</div>
 			</div>
 			<div class=' projet-6 image_projet Corporate'>
-				
+
 				<div class='contenu_hover'>
 					<h3 class='texte_img_projet'>Numerobis and co</h3>
 					<p class='h3_projet texte_img_projet'>Cabinet d'architecte</p>
@@ -186,7 +186,7 @@
 				</div>
 			</div>
 			<div class=' projet-7 image_projet Creative'>
-				
+
 				<div class='contenu_hover'>
 					<h3 class='texte_img_projet'>Apollo</h3>
 					<p class='h3_projet texte_img_projet'>Conception de piece aerospatial</p>
@@ -199,7 +199,7 @@
 				</div>
 			</div>
 			<div class=' projet-8 image_projet Corporate'>
-				
+
 				<div class='contenu_hover'>
 					<h3 class='texte_img_projet'>Be Theme</h3>
 					<p class='h3_projet texte_img_projet'>Agence Infographie</p>
@@ -256,6 +256,7 @@
 
 <script type="text/javascript">
 	var elem = document.querySelector('.image');
+	var allElem = document.querySelectorAll('.button');
 	var iso = new Isotope( elem, {
 	// options
 	itemSelector: '.image_projet',
@@ -263,19 +264,31 @@
 	});
 
 	document.getElementById('creative_selector').addEventListener('click',function(){
-		console.log('pass');
+		allElem.forEach(function(e){
+			e.classList.remove("is-active");
+		});
+		this.classList.add("is-active");
 		iso.arrange({ filter: '.Creative' });
 	});
 	document.getElementById('all_work_selector').addEventListener('click',function(){
-		console.log('pass');
+		allElem.forEach(function(e){
+			e.classList.remove("is-active");
+		});
+		this.classList.add("is-active");
 		iso.arrange({ filter: '*' });
 	});
 	document.getElementById('portfolio_selector').addEventListener('click',function(){
-		console.log('pass');
+		allElem.forEach(function(e){
+			e.classList.remove("is-active");
+		});
+		this.classList.add("is-active");
 		iso.arrange({ filter: '.Portfolio' });
 	});
 	document.getElementById('corporate_selector').addEventListener('click',function(){
-		console.log('pass');
+		allElem.forEach(function(e){
+			e.classList.remove("is-active");
+		});
+		this.classList.add("is-active");
 		iso.arrange({ filter: '.Corporate' });
 	});
 </script>
@@ -283,4 +296,3 @@
 </body>
 
 </html>
-
